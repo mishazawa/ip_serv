@@ -1,0 +1,20 @@
+<html>
+
+<head>
+  <title>asd</title>
+</head>
+
+<body>
+  <p id="1" style="display: none;">{{ id }}</p>
+  <a id="3" href=""></a>
+  <script>
+    var url = document.getElementById("1").innerText;
+    var generated = window.location.protocol + "//" + window.location.hostname + url;
+
+    document.getElementById("3").innerText = generated;
+    document.getElementById("3").setAttribute("href", generated);
+
+  </script>
+</body>
+
+</html>

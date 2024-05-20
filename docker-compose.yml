@@ -1,0 +1,9 @@
+services:
+  ip_srv:
+    image: ip_srv:latest
+    build: .
+    container_name: ip_srv
+    ports:
+      - 80:80
+    volumes:
+      - .:/app
